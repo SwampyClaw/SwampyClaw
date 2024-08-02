@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @SwampyClaw (Noah Choi)
 - 📫 How to reach me noahychoi@gmail.com
-- Currently a student at Great Neck North HS
+- Currently a student at GNNHS
 
 
 <!---
