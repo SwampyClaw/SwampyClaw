@@ -362,6 +362,7 @@
     .project-image {
       overflow: hidden;
       background: var(--paper);
+      position: relative;
     }
 
     .project-image img {
@@ -377,6 +378,39 @@
       transform: scale(1.03);
       filter: grayscale(0%);
     }
+
+    .project-pdf {
+      width: 100%;
+      min-height: 340px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-pdf iframe {
+      flex: 1;
+      width: 100%;
+      min-height: 280px;
+      border: none;
+      display: block;
+    }
+
+    .pdf-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.65rem 1rem;
+      background: var(--paper);
+      border-top: 1px solid var(--rule);
+      text-decoration: none;
+      color: var(--ink-mid);
+      font-family: var(--ff-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      transition: background 0.2s, color 0.2s;
+    }
+    .pdf-link:hover { background: var(--ink); color: var(--cream); }
 
     .project-content {
       padding: 2.5rem 2.8rem;
@@ -668,6 +702,8 @@
       .project-card { grid-template-columns: 1fr; }
       .project-card:nth-child(even) { direction: ltr; }
       .project-image img { min-height: 220px; }
+      .project-pdf iframe { min-height: 260px; }
+      .project-pdf { min-height: 300px; }
 
       .skills-grid { grid-template-columns: 1fr 1fr; }
       .skill-group:nth-child(2n) { border-right: none; }
@@ -778,10 +814,17 @@
       <!-- Project 1 -->
       <article class="project-card">
         <div class="project-image">
-          <img
-            src="images/project-1.jpg"
-            alt="Chart illustrating the GVZ (gold volatility index) and CHF/USD exchange rate lead-lag relationship, with annotated spikes and predicted currency movements"
-          />
+          <div class="project-pdf">
+            <iframe
+              src="images/project-1.pdf"
+              title="GVZ CHF/USD Lead-Lag Strategy — full research PDF"
+              aria-label="Embedded PDF: GVZ CHF/USD Lead-Lag Strategy research paper"
+            ></iframe>
+            <a class="pdf-link" href="images/project-1.pdf" target="_blank" rel="noopener noreferrer">
+              <span>Open Full PDF</span>
+              <span>↗</span>
+            </a>
+          </div>
         </div>
         <div class="project-content">
           <p class="project-num">01 &nbsp;/&nbsp; Macro Strategy</p>
@@ -801,10 +844,17 @@
       <!-- Project 2 -->
       <article class="project-card">
         <div class="project-image">
-          <img
-            src="images/project-2.jpg"
-            alt="Scatter plot and time series showing Dogecoin-to-Bitcoin ratio predicting subsequent Litecoin-to-Bitcoin underperformance, with mining-linked supply dynamics annotated"
-          />
+          <div class="project-pdf">
+            <iframe
+              src="images/project-2.pdf"
+              title="DOGE/BTC → LTC/BTC Lead-Lag Strategy — full research PDF"
+              aria-label="Embedded PDF: Dogecoin-Bitcoin to Litecoin-Bitcoin Lead-Lag Strategy research paper"
+            ></iframe>
+            <a class="pdf-link" href="images/project-2.pdf" target="_blank" rel="noopener noreferrer">
+              <span>Open Full PDF</span>
+              <span>↗</span>
+            </a>
+          </div>
         </div>
         <div class="project-content">
           <p class="project-num">02 &nbsp;/&nbsp; Relative Value</p>
