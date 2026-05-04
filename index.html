@@ -724,6 +724,8 @@
       .skill-group:last-child { border-bottom: none !important; }
       .hero-photo-wrap::before { display: none; }
       .projects-header { flex-direction: column; gap: 0.5rem; }
+      .hero-ctas { display: flex; flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+      .hero-cta + .hero-cta { margin-left: 0; }
     }
   </style>
 </head>
@@ -737,6 +739,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Research</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="Choi_Noah_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="nav-toggle" aria-label="Toggle menu" onclick="this.classList.toggle('open'); document.getElementById('mobileMenu').classList.toggle('open')">
@@ -747,6 +750,7 @@
       <a href="#about"    onclick="closeMobileMenu()">About</a>
       <a href="#projects" onclick="closeMobileMenu()">Research</a>
       <a href="#skills"   onclick="closeMobileMenu()">Skills</a>
+      <a href="Choi_Noah_Resume.pdf" target="_blank" rel="noopener noreferrer" onclick="closeMobileMenu()">Resume</a>
       <a href="#contact"  onclick="closeMobileMenu()">Contact</a>
     </div>
   </nav>
@@ -761,6 +765,7 @@
       <div class="hero-ctas">
         <a class="hero-cta" href="#projects">View Research</a>
         <a class="hero-cta" href="#contact">Get in Touch</a>
+        <a class="hero-cta" href="Choi_Noah_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
       </div>
     </div>
 
@@ -966,6 +971,13 @@
               <div class="contact-link-meta">
                 <span class="contact-link-type">LinkedIn</span>
                 <span class="contact-link-value">noah-choi-38280a31b</span>
+              </div>
+              <span class="contact-link-arrow">↗</span>
+            </a>
+            <a class="contact-link" href="Choi_Noah_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <div class="contact-link-meta">
+                <span class="contact-link-type">Resume</span>
+                <span class="contact-link-value">Choi_Noah_Resume.pdf</span>
               </div>
               <span class="contact-link-arrow">↗</span>
             </a>
